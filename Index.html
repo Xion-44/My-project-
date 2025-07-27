@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>CHIBOY RESTAURANT</title>
+   <style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Sans-Serif;
+    color: white; /* Default text color for the page */
+    background-color: black;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('Restaurants1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the flex items horizontally within the container */
+    text-align: center;
+    color: white;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section h1 {
+    position: relative;
+    z-index: 2; /* Increased z-index for better visibility */
+    font-size: 2.5em;
+    margin: 50px;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.8);
+}
+.hero-section h2 {
+    position: relative;
+    z-index: 0; /* Increased z-index */
+    font-size: 1.1em;
+    margin: 20px 0; /* Adjusted margin for better spacing */
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* New container for left-aligned content */
+.left-aligned-content {
+    position: relative; /* Essential to be above the overlay */
+    z-index: 2; /* Ensure it's above the overlay */
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Max width for readability */
+    margin: 0 auto; /* Center the block itself */
+    text-align: left; /* Align text within this block to the left */
+}
+
+.left-aligned-content h3 {
+    color: white;
+    text-align: left; /* Ensure text inside is left-aligned */
+    margin-top: 20px; /* Add some space above */
+    margin-bottom: 10px;
+}
+
+.left-aligned-content p { /* Changed p1 to p for better HTML semantics */
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.left-aligned-content ul {
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.left-aligned-content ul li a {
+    color: white;
+    text-decoration: none;
+    display: block; /* Makes the whole list item clickable */
+    padding: 5px 0;
+}
+
+.left-aligned-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.buttons-container {
+    position: relative;
+    z-index: 2;
+    width: 80%; /* Match width of left-aligned-content */
+    max-width: 800px;
+    margin: 20px auto; /* Center and add some margin */
+    text-align: left; /* Align buttons to the left */
+}
+
+.buttons-container button {
+    background-color: powderblue;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black; /* Make button text visible */
+    font-weight: bold;
+}
+
+.buttons-container button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes footer to the bottom of the flex container */
+}
+
+footer p {
+    margin: 0;
+}
+  </style>
+ </head>
+<body>
+
+  <section class="hero-section">
+ <h1>CHIBOY CULINARY DISHES
+  </h1>
+
+
+ <h2>You are welcome to our homepage, proceed to choose from our wide range of exquisite culinary dishes</h2>
+
+    <div class="left-aligned-content">
+        <h3>We have different selections to suit whatever cravings you might have. Here is our cuisine from the finest countries.</h3>
+        <p>View our full menu below</p>
+        <ul>
+            <li><a href="Africa.html">African</a></li>
+            <li><a href="Europe.html">European</a></li>
+        </ul>
+    </div>
+
+    <div class="buttons-container">
+        <button onclick="window.location.href='contact.html'">Contact Us</button>
+        <button onclick="window.location.href='About.html'">About us</button>
+    </div>
+
+ <Footer>
+   <div>
+   <p>&copy; 2025 CHIBOY RESTAURANT</p>
+   </div>
+ </Footer>
+ </body>
+</html>
